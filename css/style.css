@@ -6,12 +6,51 @@ body {
     font-weight: 400;
     color: #434455;
 }
+h1,
+h2,
+h3 {
+  margin: 0; 
+}
+p{
+    margin: 0;  
+}
 a {
     text-decoration: none;
 }
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0;
+}
+.page-header {
+    margin: 24px 0;
+       
+}
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-nav {
+    display: flex;
+    gap: 40px;
+    padding:0;
+  }
+  .page-contacts {
+    display: flex;
+    gap: 37px;
+    
+  }   
 .nav-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -20,6 +59,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    
 }
 .nav-span {
     color: #2e2f42;
@@ -63,6 +103,13 @@ a:focus {
     text-align: center;
     color: #fff;
 }
+.section-head {
+     display: block;
+     width: 496px;
+     margin: 0 auto;
+     padding-top: 188px;
+
+}
 .head-button {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
@@ -71,7 +118,14 @@ a:focus {
     background: #4d5ae5;  
     color: #fff;
     cursor: pointer;
-
+    display: block;
+    padding: 16px 32px;
+    margin: 0 auto;
+  
+}
+.section-button {
+    margin-top: 48px;
+    padding-bottom: 188px;
 }
 .head-button:hover {
     background-color:#404BBF;   
@@ -79,19 +133,33 @@ a:focus {
 .head-button:focus {
     background-color: #404BBF;
 }
+.page-list {
+    display: flex;
+    gap: 24px;
+}
+.page .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .page-title {
     font-weight: 500;
     font-size: 20px;
-   line-height: 1.2;
-   letter-spacing: 0.02em;
-   color: #2e2f42;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 .page-text {
-    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+.page-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
 }
 .title {
     font-weight: 700;
@@ -101,11 +169,12 @@ a:focus {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-top: 120px;
 }
 .main {
     background-color: #F4F4FD;
 }
-.main-list {
+.main-item {
     background-color: #FFFFFF;
 }
 .main-photo {
