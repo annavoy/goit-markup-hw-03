@@ -30,7 +30,9 @@ img {
 section {
     padding: 120px 0;
 }
+
 /* HEADER */
+
 .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -94,10 +96,7 @@ a:active {
 a:focus {
     color: #404bbf;
 }
-.header-contacts{
-    display: flex;
-    align-items: center;
-}
+
 .list-contacts {
     display: flex;
     gap: 40px;
@@ -158,8 +157,9 @@ a:focus {
     background-color: #404BBF;
 }
     /* SECTION PAGE */
-.hidden {
-    visibility: hidden;
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
 }
 .page-list {
     display: flex;
